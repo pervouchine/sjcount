@@ -4,7 +4,7 @@ SAMTOOLS_DIR=samtools-0.1.18/
 
 .PHONY: all clean test
 
-all:  sjcount
+all:  sjcount 
 
 clean ::
 	rm -f -r sjcount progressbar.o

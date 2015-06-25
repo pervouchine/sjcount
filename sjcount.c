@@ -1,4 +1,4 @@
-//	Copyright 2012 Dmitri Pervouchine (dp@crg.eu), Lab Roderic Guigo
+//	Copyright 2012 Dmitri Pervouchine (dp@crg.eu), Lab Roderic Guigo 
 //	Bioinformatics and Genomics Group @ Centre for Genomic Regulation
 //	Parc de Recerca Biomedica: Dr. Aiguader, 88, 08003 Barcelona
 //	
