@@ -42,6 +42,7 @@ ${TESTDIR}control.ssc : ${TESTBAM} ${TESTDIR}sam2sb3.pl  ${TESTDIR}test.ssj
 	${SAMTOOLS_DIR}samtools view ${TESTBAM}  |  perl ${TESTDIR}sam2sb3.pl -ssj ${TESTDIR}test.ssj ${PARAMS} | sort > ${TESTDIR}control.ssc
 
 
+
 test :: ${TESTDIR}test.ssj ${TESTDIR}control.ssj ${TESTDIR}test.ssc ${TESTDIR}control.ssc
 	sort ${TESTDIR}test.ssj | cmp ${TESTDIR}control.ssj
 	sort ${TESTDIR}test.ssc | cmp ${TESTDIR}control.ssc
