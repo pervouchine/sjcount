@@ -20,7 +20,11 @@ along with 'sjcount' package.  If not, see <http://www.gnu.org/licenses/>.
 
 DESCRIPTION
 
-sjcount is a light version of sjcount-full package (https://github.com/pervouchine/sjcount-full) which does not count multisplits
+sjcount is a utility for fast SJ quantification. It is an annotation-agnostic offset-aware vesrion of bam2ssj (see https://github.com/pervouchine/bam2ssj)
+
+<span style="color: red"> 
+This a light version of sjcount-full package (https://github.com/pervouchine/sjcount-full) which does not count multisplits
+</span>
 
 ============================================================================
 
