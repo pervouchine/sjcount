@@ -22,7 +22,7 @@ DESCRIPTION
 
 sjcount is a utility for fast SJ quantification. It is an annotation-agnostic offset-aware vesrion of bam2ssj (see https://github.com/pervouchine/bam2ssj)
 
-_This a light version of sjcount-full package (https://github.com/pervouchine/sjcount-full) which does not count multisplits_
+**This a light version of sjcount-full package (https://github.com/pervouchine/sjcount-full) which does not count multisplits**
 
 ============================================================================
 
