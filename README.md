@@ -2,25 +2,25 @@ Copyright 2013 Dmitri Pervouchine (dp@crg.eu), Lab Roderic Guigo
 Bioinformatics and Genomics Group @ Centre for Genomic Regulation 
 Parc de Recerca Biomedica: Dr. Aiguader, 88, 08003 Barcelona
 
-This file is a part of the 'sjc-light' package. 
-'sjc-light' package is free software: you can redistribute it and/or modify
+This file is a part of the 'sjcount' package. 
+'sjcount' package is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
-'sjc-light' package is distributed in the hope that it will be useful,
+'sjcount' package is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License 
-along with 'sjc-light' package.  If not, see <http://www.gnu.org/licenses/>.
+along with 'sjcount' package.  If not, see <http://www.gnu.org/licenses/>.
 
 ============================================================================
 
 DESCRIPTION
 
-sjc-light is a light version of sjcount utility (https://github.com/pervouchine/sjcount) which does not count multisplits
+sjcount is a light version of sjcount-full package (https://github.com/pervouchine/sjcount-full) which does not count multisplits
 
 ============================================================================
 
@@ -36,7 +36,7 @@ NOTE that
 
 1.	If samtools is already installed, you can simply update the SAMTOOLS_DIR varibale in the makefile
 
-2.	Some users get error messages even when compiling sjc-light with a correct SAMDIR path, something like
+2.	Some users get error messages even when compiling sjcount with a correct SAMDIR path, something like
 
 	/centos6/samtools-9.3.2013/libbam.a(bgzf.o): In function `mt_destroy`:
 	/centos6/samtools-9.3.2013/bgzf.c:458: undefined reference to `pthread_join`
@@ -50,7 +50,7 @@ This error has to do with big zip libraries, not with samtools.
 USAGE
 
 
-Usage: ./sjc-light -bam bam_file [-ssj junctions_output] [-ssc boundaries_output] [-log log_file] [-read1 0|1] [-read2 0|1] [-nbins number_of_bins] [-lim number_of_lines] [-quiet]
+Usage: ./sjcount -bam bam_file [-ssj junctions_output] [-ssc boundaries_output] [-log log_file] [-read1 0|1] [-read2 0|1] [-nbins number_of_bins] [-lim number_of_lines] [-quiet]
 
 Input:  a sorted BAM file with header
 
@@ -75,4 +75,4 @@ Output:
 ============================================================================
 
 DETAILS
-	See documentation in latex/sjc-light.pdf
+	See documentation in latex/sjcount.pdf
