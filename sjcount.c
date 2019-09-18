@@ -357,7 +357,7 @@ int main(int argc,char* argv[]) {
 					update_site(curr_site[ref_id], pos + increm, mapped_strand, offset, 0);
 					pos += increm;
 				 	break;
-		case BAM_CSOFT_CLIP:	offset += increm;
+		/*case BAM_CSOFT_CLIP:	offset += increm; SOFT CLIP DOESNT CONSUME THE REFERENCE */
 		case BAM_CHARD_CLIP:
 		case BAM_CPAD:
 		default:		break;
