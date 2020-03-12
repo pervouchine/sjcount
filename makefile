@@ -30,7 +30,7 @@ TESTBAM=${TESTDIR}test.bam
 PARAMS=-nbins 50 -read1 0 -read2 0 -quiet -lim 1000000
 
 ${TESTDIR}test.bam : 
-	wget genome.crg.es/~dmitri/export/sjcount/test.bam -O ${TESTDIR}test.bam
+	wget http://cb.skoltech.ru/dp/ipsa/ENCFF054FHQ.bam  -O ${TESTDIR}test.bam
 
 ${TESTDIR}test.ssj ${TESTDIR}test.ssc : ${TESTBAM} sjcount
 	./sjcount -bam ${TESTBAM} ${PARAMS} -ssj ${TESTDIR}test.ssj -ssc ${TESTDIR}test.ssc
